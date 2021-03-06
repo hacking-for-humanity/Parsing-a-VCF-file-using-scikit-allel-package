@@ -16,7 +16,7 @@ conda install -c conda-forge scikit-allel
 
 import and read read the file into callset collection using allel.read_vcf()
 
-Parsing the file based on white spaces, colons and commas with regex package.
+Parse the file based on white spaces, colons and commas with regex package.
 
 Select the gene of interest using the gene ID's referred back to NCBI gene database or Filter = PASS column in file.
 
