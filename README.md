@@ -1,4 +1,4 @@
-# Parsing-a-VCF-file-using-scikit-allel-package-
+# Parsing-a-VCF-file-using-scikit-allel-package
 Parsing the VCF file using the scikit-allel package and extracting the desired data lines
 
 
