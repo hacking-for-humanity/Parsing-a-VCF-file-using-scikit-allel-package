@@ -1,0 +1,42 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="Accept as a confident somatic mutation">
+##FILTER=<ID=REJECT,Description="Rejected as a confident somatic mutation">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=BQ,Number=A,Type=Float,Description="Average base quality for reads supporting alleles">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=FA,Number=A,Type=Float,Description="Allele fraction of the alternate allele with regard to reference">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=SS,Number=1,Type=Integer,Description="Variant status relative to non-adjacent Normal,0=wildtype,1=germline,2=somatic,3=LOH,4=post-transcriptional modification,5=unknown">
+##INFO=<ID=DB,Number=0,Type=Flag,Description="dbSNP Membership">
+##INFO=<ID=MQ0,Number=1,Type=Integer,Description="Total Mapping Quality Zero Reads">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Somatic event">
+##INFO=<ID=VT,Number=1,Type=String,Description="Variant type, can be SNP, INS or DEL">
+##reference=file:///data/NYGC/Resources/Indexes/bwa/human_g1k_v37.fasta
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NORMAL	TUMOR
+1       209111756       rs5004977       T       A       .       REJECT  DB      GT:AD:BQ:DP:FA  0:1,48:.:49:0.980       0/1:0,3:21:3:1.00
+1       209111757       rs5004978       C       A       .       REJECT  DB      GT:AD:BQ:DP:FA  0:0,48:.:48:1.00        0/1:0,3:24:3:1.00
+1       209111761       rs5004980       T       C       .       REJECT  DB      GT:AD:BQ:DP:FA  0:0,48:.:48:1.00        0/1:0,1:10:1:1.00
+2       20911144        .       C       A       .       REJECT  .       GT:AD:BQ:DP:FA  0:37,7:.:44:0.159       0/1:60,7:18:67:0.104
+2       209113112       rs121913500     C       T       .       PASS    DB;SOMATIC;VT=SNP       GT:AD:BQ:DP:FA:SS       0:58,0:.:58:0.00:0      0/1:51,40:29:91:0.440:2
+2       209111288       .       G       A       .       PASS    SOMATIC;VT=SNP  GT:AD:BQ:DP:FA:SS       0:39,0:.:39:0.00:0      0/1:41,24:29:66:0.369:2
+2       209111377       .       G       A       .       REJECT  .       GT:AD:BQ:DP:FA  0:51,2:.:53:0.038       0/1:54,2:26:56:0.036
+3       20911171        rs9830439       T       C       .       REJECT  DB      GT:AD:BQ:DP:FA  0:0,53:.:55:1.00        0/1:0,90:26:90:1.00
+3       104209111       .       T       G       .       REJECT  .       GT:AD:BQ:DP:FA  0:22,28:.:50:0.560      0/1:44,50:28:94:0.532
+3       122091111       .       T       A       .       REJECT  .       GT:AD:BQ:DP:FA  0:47,4:.:52:0.078       0/1:42,3:13:45:0.067
+3       122091113       .       T       A       .       REJECT  .       GT:AD:BQ:DP:FA  0:48,3:.:52:0.059       0/1:37,7:13:44:0.159
+5       130209111       .       A       G       .       REJECT  .       GT:AD:BQ:DP:FA  0:58,8:.:60:0.121       0/1:88,1:12:90:0.011
+5	153456382	rs1478349	T	C	.	REJECT	DB	GT:AD:BQ:DP:FA	0:0,61:.:61:1.00	0/1:0,85:29:85:1.00
+6	91209111	rs182259	C	T	.	REJECT	DB	GT:AD:BQ:DP:FA	0:24,31:.:57:0.564	0/1:52,50:28:103:0.490
+7	22810166	rs2091115	G	T	.	REJECT	DB	GT:AD:BQ:DP:FA	0:30,24:.:54:0.444	0/1:52,39:29:92:0.429
+7	38183023	rs2091110	A	G	.	REJECT	DB	GT:AD:BQ:DP:FA	0:25,24:.:49:0.490	0/1:39,54:28:93:0.581
+7	97209111	rs12533591	G	A	.	REJECT	DB	GT:AD:BQ:DP:FA	0:16,16:.:27:0.500	0/1:31,46:28:77:0.597
+10	2091118	rs58434396	A	C	.	REJECT	DB	GT:AD:BQ:DP:FA	0:36,15:.:51:0.294	0/1:58,6:25:64:0.094
+10      89709834        .       C       T       .       PASS    SOMATIC;VT=SNP  GT:AD:BQ:DP:FA:SS       0:46,0:.:45:0.00:0      0/1:54,19:30:73:0.260:2
+10	120911199	rs7081689	G	T	.	REJECT	DB	GT:AD:BQ:DP:FA	0:15,20:.:35:0.571	0/1:37,33:29:70:0.471
+12	209111	.	G	C	.	REJECT	.	GT:AD:BQ:DP:FA	0:39,10:.:50:0.204	0/1:52,2:18:55:0.037
+12	2365131	rs74209111	T	C	.	REJECT	DB	GT:AD:BQ:DP:FA	0:590,75:.:629:0.113	0/1:239,15:23:255:0.059
+12	20911127	rs10770720	G	C	.	REJECT	DB	GT:AD:BQ:DP:FA	0:32,26:.:58:0.448	0/1:42,46:25:88:0.523
+13	65209111	rs71442635	C	T	.	REJECT	DB	GT:AD:BQ:DP:FA	0:26,36:.:62:0.581	0/1:5,37:29:42:0.881
+17	69959015	rs7209111	T	C	.	REJECT	DB	GT:AD:BQ:DP:FA	0:21,27:.:48:0.563	0/1:46,38:28:84:0.452
