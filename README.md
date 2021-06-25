@@ -20,4 +20,4 @@ Parse the file based on white spaces, colons and commas with regex package.
 
 Select the gene of interest using the gene ID's referred back to NCBI gene database or Filter = PASS column in file.
 
-Keep parsing until we have our required values to work with and load them into a dicntionary. 
+Keep parsing until we have our required values to work with and load them into a dictonary. 
