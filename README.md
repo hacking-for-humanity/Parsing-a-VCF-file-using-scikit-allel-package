@@ -5,13 +5,15 @@ Parsing the VCF file using the scikit-allel package and extracting the desired d
 with open('sample.vcf', mode='r') as vcf:
     print(vcf.read())
 
-*Import scikit-allel package
+* Import scikit-allel package
 
 Install using pip install scikit-allel 
 
 or 
 
 conda install -c conda-forge scikit-allel
+
+**Instructions for parsing the file:**
 
 1) import and read read the file into callset collection using allel.read_vcf()
 
